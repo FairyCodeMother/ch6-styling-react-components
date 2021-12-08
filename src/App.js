@@ -1,9 +1,15 @@
+/*
+//
+//  Task: Do not allow a user to create an empty Goal. Display a message and use dynamic styling.
+//
+ */
 import React, { useState } from 'react';
 
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 import './App.css';
 
+// 1. We want to catch the submission, before the new entry is made.
 const App = () => {
     const [courseGoals, setCourseGoals] = useState([
         { text: 'Do all exercises!', id: 'g1' },
@@ -35,6 +41,7 @@ const App = () => {
         );
     }
 
+    // 2. CourseInput contains the submission logic.
     return (
         <div>
             <section id="goal-form">
