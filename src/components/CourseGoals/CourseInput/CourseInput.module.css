@@ -19,6 +19,21 @@
 
 .form-control input:focus {
   outline: none;
-  background: #fad0ec;
+  background: lightcyan;
   border-color: #8b005d;
 }
+
+/*7. Add a new style for invalid submissions input.*/
+.form-control.invalid input {
+  border-color: red;
+  background: #ffd7d7;
+}
+
+/*8. Add a new style for invalid submissions label.
+     Now add a media query to Button.*/
+.form-control.invalid label {
+  color: red;
+}
+
+
+
